@@ -3,7 +3,6 @@ import styles from "./characterStatus.module.css";
 import Progress from "../../atoms/progress/Progress";
 
 const LevelAndPoints = (props) => {
-	console.log('--LevelAndPoints');
 	// data
 	const {character, count} = props;
 	const [progress, setProgress] = useState(0);

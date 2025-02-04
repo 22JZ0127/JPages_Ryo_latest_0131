@@ -142,6 +142,7 @@ const ScanBusinessCardMobile = () => {
 		
 		テキスト: ${inputText}
 `;
+		console.log(prompt);
 		try {
 			const result = await model.generateContent(prompt);
 			const textResponse = result.response.text();
@@ -154,6 +155,7 @@ const ScanBusinessCardMobile = () => {
 	};
 
 	const cleanResponse = (generatedResponse) => {
+		console.log(generatedResponse);
 		return generatedResponse
 		.replace(/```json/, '') 
 		.replace(/```/, '') 
